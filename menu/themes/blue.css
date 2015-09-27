@@ -1,0 +1,119 @@
+/*
+ * Root level
+ */
+.ssMenuChildren_blue {
+	font-family:tahoma,arial,verdana;
+	font-size:12px;
+	text-decoration:none;
+	background-color: #418DC5;
+	color: #ffffff;
+	cursor: pointer;
+}
+/* ul layout styles */
+.ssMenuChildren_blue .ChildrenNodes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ssMenuChildren_blue .ChildrenNodes .Item {
+	float: left;
+	padding:6px 10px 8px;
+	background-color: #418DC5;
+	background-image: url(blue/gradient.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+.ssMenuChildren_blue .ChildrenNodes  .Hovered {
+	background-color: #FF9900;
+	background-image: url(blue/gradientHover.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.ssMenuChildren_blue .ChildrenNodes  .Item div {
+	max-width: 200px;
+	padding: 2px 4px 2px 4px;
+}
+
+
+/*
+ * Sub levels
+ */
+.ssMenuNodeChildren_blue {
+	font-family:tahoma,arial,verdana;
+	font-size:11px;
+	text-decoration:none;
+	color: #ffffff;
+	position: absolute;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.ssMenuNodeChildren_blue .ChildrenNodes {
+	background-color: #418DC5;
+	background-image: url(blue/gradient.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.ssMenuNodeChildren_blue {
+	font-family: tahoma;
+	font-size: 13px;
+	position: absolute;
+	background-color: #cccccc;
+	cursor: pointer;
+}
+
+.ssMenuNodeChildren_blue.Frame1 {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+
+}
+.ssMenuNodeChildren_blue.Frame2 {
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+
+}
+.ssMenuNodeChildren_blue.Frame3 {
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+
+}
+
+/* ul layout styles */
+.ssMenuNodeChildren_blue .ChildrenNodes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ssMenuNodeChildren_blue .ChildrenNodes  .HasChildren {
+	background-image: url(blue/hasChildren.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.ssMenuNodeChildren_blue .ChildrenNodes  .Hovered {
+	background-color: #FF9900;
+	background-image: url(blue/gradientHover.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+.ssMenuNodeChildren_blue .ChildrenNodes  .HasChildren.Hovered div {
+	background-image: url(blue/hasChildrenHover.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+.ssMenuNodeChildren_blue .ChildrenNodes  .Item div {
+	width: 100px;
+	max-width: 200px;
+	padding: 2px 4px 2px 4px;
+}

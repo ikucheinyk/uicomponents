@@ -1,0 +1,39 @@
+.SSScrollbar_incentient2 {
+	/* position: fixed; */
+	float: left;
+}
+
+.SSScrollbar_incentient2 .ArrowUp {
+	background: url(incentient2/ArrowUp.png) left top no-repeat;
+	width: 39px;
+	height: 39px;
+}
+.SSScrollbar_incentient2 .ArrowDown {
+	background: url(incentient2/ArrowDown.png) left top no-repeat;
+	width: 39px;
+	height: 39px;
+}
+
+.SSScrollbar_incentient2 .BarContainer {
+	background: url(incentient2/BarBg.png) left top repeat-y;
+	width: 39px;
+}
+.SSScrollbar_incentient2 .Slider {
+	background: url(incentient2/SliderMiddle.png) left top repeat-y;
+	width: 39px;
+	position: relative;
+}
+.SSScrollbar_incentient2 .Slider .Top {
+	background: url(incentient2/SliderTop.png) left top no-repeat;
+	width: 39px;
+	height: 2px;
+}
+.SSScrollbar_incentient2 .Slider .Bottom {
+	background: url(incentient2/SliderBottom.png) left bottom no-repeat;
+	width: 39px;
+	height: 2px;
+}
+.SSScrollbar_incentient2 .Slider .Middle {
+	background: url(incentient2/SliderMiddle2.png) center center no-repeat;
+	min-height: 25px;
+}

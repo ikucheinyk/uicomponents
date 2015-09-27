@@ -1,0 +1,146 @@
+.SSCalendar_default {
+	font-family: tahoma, verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #cccccc;
+	border-collapse:collapse;
+	padding:0px;
+}
+.SSCalendar_default td {
+	padding: 3px 5px;
+	text-align: right;
+}
+
+
+.SSCalendar_default .previous {
+	background-color: #E2E2E2;
+	background-image: url(default/arrowLeft.png);	
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_default .next {
+	background-color: #E2E2E2;
+	background-image: url(default/arrowRight.png);	
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_default .previous.hover {
+	background-color: #F0F0F0;
+	background-image: url(default/arrowLeft.png);
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_default .next.hover {
+	background-color: #F0F0F0;
+	background-image: url(default/arrowRight.png);
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_default .previous.click {
+	background-color: #FFFFCC;
+	background-image: url(default/arrowLeft.png);	
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_default .next.click {
+	background-color: #FFFFCC;
+	background-image: url(default/arrowRight.png);	
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+.SSCalendar_default .weekday {
+	border-top: 1px solid #E1E5E8;
+	border-bottom: 1px solid #E1E5E8;
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.SSCalendar_default .title {
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.SSCalendar_default .inside {
+	color: #000000;
+	background-color: #E2E2E2;
+}
+.SSCalendar_default .inside.hover {
+	color: #000000;
+	background-color: #F0F0F0;
+}
+.SSCalendar_default .inside.down {}
+.SSCalendar_default .inside.today {
+	color: #000000;
+	background-color: #E2E2E2;
+	border: 1px solid black;
+}
+.SSCalendar_default .inside.today.hover {}
+.SSCalendar_default .inside.today.down {}
+.SSCalendar_default .inside.current {
+	background-color: #6C6C6C;
+	color: #f1f1f1;
+}
+.SSCalendar_default .inside.current.hover {}
+.SSCalendar_default .inside.current.down {}
+.SSCalendar_default .inside.current.today {
+	color: #f1f1f1;
+	background-color: #6C6C6C;
+	border: 1px solid black;
+}
+.SSCalendar_default .inside.current.today.hover {}
+.SSCalendar_default .inside.current.today.down {}
+.SSCalendar_default .outside {
+	color: #777777;
+}
+.SSCalendar_default .outside.hover {
+	color: #777777;
+	background-color: #F0F0F0;
+}
+.SSCalendar_default .outside.down {}
+.SSCalendar_default .outside.today {
+	color: #777777;
+	border: 1px solid black;
+}
+.SSCalendar_default .outside.today.hover {}
+.SSCalendar_default .outside.today.down {}
+.SSCalendar_default .outside.current {
+	background-color: #404040;
+	color: #cccccc;
+}
+.SSCalendar_default .outside.current.hover {}
+.SSCalendar_default .outside.current.down {}
+.SSCalendar_default .outside.current.today {
+	background-color: #404040;
+	color: #cccccc;
+	border: 1px solid black;
+}
+.SSCalendar_default .outside.current.today.hover {}
+.SSCalendar_default .outside.current.today.down {}
+
+
+/* 
+
+.SSCalendar_default .insideCurentDay {
+	background-color: #575757;
+	color: #000000;
+}
+.SSCalendar_default .inside.today {
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+.SSCalendar_default .outside {
+
+}
+.SSCalendar_default .outsideCurentDay {
+	background-color: #333333;
+	color: #777777;
+}
+.SSCalendar_default .outside.today {
+	border: 1px solid #000000;
+	color: #ffffff;
+} */
+
+

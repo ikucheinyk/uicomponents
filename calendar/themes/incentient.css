@@ -1,0 +1,236 @@
+.SSCalendar_incentient {
+	font-family: calibri, tahoma, verdana;
+	font-size: 25px;
+	color: #50595F;
+	text-shadow: 1px 1px 1px #ffffff;
+	background-color: #cccccc;
+	border-left: 1px solid #B1BBC2;
+	border-bottom: 1px solid #B1BBC2;
+	border-collapse:collapse;
+	padding:0px;
+}
+.SSCalendar_incentient td {
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	background: url(incentient/bg.png) left top repeat-x;
+}
+
+.SSCalendar_incentient .weekdays {
+	font-family: calibri, tahoma, verdana;
+	font-weight: bold;
+	font-size: 17px;
+}
+.SSCalendar_incentient .weekdays tr  > :last-child {
+	border-right: 1px solid #B1BBC2;
+}
+
+.SSCalendar_incentient .previous {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	border-bottom: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .previous div {
+	background: url(incentient/arrowLeft.png) center center no-repeat;	
+	width: 36px;
+	height: 36px;
+}
+.SSCalendar_incentient .next {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	border-bottom: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .next div {
+	background: url(incentient/arrowRight.png) center center no-repeat;	
+	width: 36px;
+	height: 36px;
+}
+.SSCalendar_incentient .previous.hover {}
+.SSCalendar_incentient .next.hover {}
+.SSCalendar_incentient .previous.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	border-bottom: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+}
+.SSCalendar_incentient .previous.down div {
+	background: url(incentient/arrowLeft.png) center center no-repeat;	
+	width: 36px;
+	height: 36px;
+}
+.SSCalendar_incentient .next.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	border-bottom: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+}
+.SSCalendar_incentient .next.down div {
+	background: url(incentient/arrowRight.png) center center no-repeat;	
+	width: 36px;
+	height: 36px;
+}
+
+.SSCalendar_incentient .weekday {
+
+}
+
+.SSCalendar_incentient .title {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	border-bottom: 1px solid #B1BBC2;
+	text-align: center;
+}
+
+
+.SSCalendar_incentient .inside {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .inside.hover {}
+.SSCalendar_incentient .inside.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+}
+.SSCalendar_incentient .inside.today {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .inside.today {
+	background: url(incentient/bgToday.png) left top repeat-x;
+	color: #52A400;
+}
+.SSCalendar_incentient .inside.today div{
+	border: 2px solid #66CC33;
+}
+.SSCalendar_incentient .inside.today.hover {}
+.SSCalendar_incentient .inside.today.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+}
+.SSCalendar_incentient .inside.today.down div{
+	border: 2px solid #66CC33;
+}
+.SSCalendar_incentient .inside.current {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+}
+.SSCalendar_incentient .inside.current.hover {}
+.SSCalendar_incentient .inside.current.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+}
+.SSCalendar_incentient .inside.current.today {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #52A400;
+}
+.SSCalendar_incentient .inside.current.today div{
+	border: 2px solid #66CC33;
+}
+.SSCalendar_incentient .inside.current.today.hover {}
+.SSCalendar_incentient .inside.current.today.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+}
+.SSCalendar_incentient .inside.current.today.down div{
+	border: 2px solid #66CC33;
+}
+.SSCalendar_incentient .outside {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .outside div {
+	opacity: 0.3;
+}
+.SSCalendar_incentient .outside.hover {}
+.SSCalendar_incentient .outside.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+	opacity: 0.6;
+}
+.SSCalendar_incentient .outside.today {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .outside.today div{
+	background: url(incentient/bgToday.png) left top repeat-x;
+	color: #52A400;
+	border: 2px solid #66CC33;
+	opacity: 0.6;
+}
+
+.SSCalendar_incentient .outside.today.hover {}
+.SSCalendar_incentient .outside.today.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	color: #52A400;
+}
+.SSCalendar_incentient .outside.today.down div {
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	border: 2px solid #66CC33;
+	opacity: 0.6;
+}
+.SSCalendar_incentient .outside.current {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .outside.current div{
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+	height: 33px;
+	opacity: 0.6;
+	border-top: 1px solid #ffffff;
+	vertical-align: bottom;
+}
+.SSCalendar_incentient .outside.current.hover {}
+.SSCalendar_incentient .outside.current.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+}
+.SSCalendar_incentient .outside.current.down div {
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	color: #A08216;
+	height: 33px;
+	opacity: 0.6;
+	border-top: 1px solid #ffffff;
+	vertical-align: bottom;
+}
+.SSCalendar_incentient .outside.current.today {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	color: #52A400;
+}
+.SSCalendar_incentient .outside.current.today div {
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	border: 2px solid #66CC33;
+	opacity: 0.6;
+}
+
+.SSCalendar_incentient .outside.current.today.hover {}
+.SSCalendar_incentient .outside.current.today.down {
+	border-top: 1px solid #B1BBC2;
+	border-right: 1px solid #B1BBC2;
+	color: #52A400;
+}
+.SSCalendar_incentient .outside.current.today.down div {
+	background: url(incentient/bgCurrent.png) left top repeat-x;
+	border: 2px solid #66CC33;
+	opacity: 0.6;
+}
+
+
+
+

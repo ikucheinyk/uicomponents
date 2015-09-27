@@ -1,0 +1,94 @@
+.SSCalendar_puzzle {
+	font-family: tahoma, verdana;
+	font-size: 11px;
+	color: #000000;
+	background-color: #ffffff;
+	width: 248px;
+	border-collapse:collapse;
+	padding:0px;
+}
+.SSCalendar_puzzle td {
+	text-align: right;
+}
+
+
+.SSCalendar_puzzle .previous {
+	background-color: #47a3c0;
+	background-image: url(puzzle/prev.gif);
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_puzzle .next {
+	background-color: #47a3c0;
+	background-image: url(puzzle/next.gif);	
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+.SSCalendar_puzzle .previous.hover {
+	background-image: url(puzzle/prev-hover.gif);
+}
+.SSCalendar_puzzle .next.hover {
+	background-image: url(puzzle/next-hover.gif);
+}
+.SSCalendar_puzzle .previous.click {
+}
+.SSCalendar_puzzle .next.click {	
+}
+
+.SSCalendar_puzzle .weekday {
+	padding:6px 9px;
+	height: 28px;
+	background: url(puzzle/weeks-bg.gif) left top repeat-x;
+	border-top: 1px solid #E1E5E8;
+	border-bottom: 1px solid #E1E5E8;
+	border-left: 1px solid #ffffff;
+	background-color: #333333;
+	color: #164356;
+}
+
+.SSCalendar_puzzle .title {
+	height: 39px;
+	background-color: #47a3c0;
+	font-weight: bold;
+	text-align: center;
+	font-family: Myriad Pro, Arial;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+
+.SSCalendar_puzzle .day div {
+	padding:6px 9px;
+	text-align: right;
+}
+.SSCalendar_puzzle .day.hover {
+	background-color: #FFFF99;
+}
+.SSCalendar_puzzle .day.today div {
+	border: 2px solid #FFCC00;
+}
+.SSCalendar_puzzle .day {
+	color: #164356;
+	width: 12%;
+	border-left: 1px solid #AADAE6;
+	border-bottom: 1px solid #AADAE6;
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #164356;
+	font-weight: normal;
+}
+.SSCalendar_puzzle .inside {
+	background-color: #F1F8FA;
+}
+
+.SSCalendar_puzzle .outside {
+	color: #d5eaf1;
+}
+
+.SSCalendar_puzzle tbody tr td:first-child {
+	border-left: none;
+}
+.SSCalendar_puzzle thead tr td:first-child {
+	border-left: none;
+}

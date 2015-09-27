@@ -1,0 +1,284 @@
+/*
+ * Root level
+ */
+.ssMenuChildren_rounded {
+	font-family:	Arial,Helvetica,sans-serif;
+	font-size:	14px;
+	font-weight:	400;
+	font-style:	normal;
+	background-color: #636363;
+	width: 100%;
+	display:table;
+	color: #DDDDDD;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
+	padding: 2px;
+}
+/* ul layout styles */
+.ssMenuChildren_rounded .ChildrenNodes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ssMenuChildren_rounded .ChildrenNodes ul li {
+	float: left;
+	cursor: pointer;
+}
+
+.ssMenuChildren_rounded .ChildrenNodes  .Item div {
+	max-width: 200px;
+	padding: 10px;
+}
+.ssMenuChildren_rounded .ChildrenNodes  .Item.Expanded {
+	/*background-color: #222222;*/
+	color: #fff;
+}
+.ssMenuChildren_rounded .ChildrenNodes  .Item.Hovered {
+	/*background-color: #222222;*/
+	color: #fff;
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+.ssMenuChildren_rounded .ChildrenNodes .Item.NoChildren {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+
+.ssMenuChildren_rounded .ChildrenNodes .Item.HasChildren.Hovered,
+.ssMenuChildren_rounded .ChildrenNodes .Item.HasChildren.Expanded {
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+/* Down */
+.ssMenuChildren_rounded .ChildrenNodes .Item.DownRight.Expanded,
+.ssMenuChildren_rounded .ChildrenNodes .Item.DownLeft.Expanded {
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+/* Up */
+.ssMenuChildren_rounded .ChildrenNodes .Item.UpRight.Expanded,
+.ssMenuChildren_rounded .ChildrenNodes .Item.UpLeft.Expanded {
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+/* Right */
+.ssMenuChildren_rounded .ChildrenNodes .Item.RightDown.Expanded,
+.ssMenuChildren_rounded .ChildrenNodes .Item.RightUp.Expanded {
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+}
+/* Left */
+.ssMenuChildren_rounded .ChildrenNodes .Item.LeftDown.Expanded,
+.ssMenuChildren_rounded .ChildrenNodes .Item.LeftUp.Expanded {
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+/*
+ * Sub levels
+ */
+.ssMenuNodeChildren_rounded {
+	font-family: tahoma;
+	font-size: 13px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ssMenuNodeChildren_rounded.Frame1 {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+
+}
+.ssMenuNodeChildren_rounded.Frame2 {
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+
+}
+.ssMenuNodeChildren_rounded.Frame3 {
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+
+}
+
+/* CHILDREN CONTAINER STYLES */
+/* Down */
+.ssMenuNodeChildren_rounded .ChildrenNodes {
+	/*background-color: #222222;*/
+	color: #DDDDDD;
+	padding: 5px;
+}
+
+/*Down*/
+.ssMenuNodeChildren_rounded .ChildrenNodes.DownRight {
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes.DownLeft {
+	-moz-border-radius: 5px 0px 5px 5px;
+	-webkit-border-radius: 5px 0px 5px 5px;
+	border-radius: 5px 0px 5px 5px;
+}
+/*Up*/
+.ssMenuNodeChildren_rounded .ChildrenNodes.UpRight {
+	-moz-border-radius: 5px 5px 5px 0px;
+	-webkit-border-radius: 5px 5px 5px 0px;
+	border-radius: 5px 5px 5px 0px;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes.UpLeft {
+	-moz-border-radius: 5px 5px 0px 5px;
+	-webkit-border-radius: 5px 5px 0px 5px;
+	border-radius: 5px 5px 0px 5px;
+}
+/*Left*/
+.ssMenuNodeChildren_rounded .ChildrenNodes.LeftDown {
+	-moz-border-radius: 5px 0px 5px 5px;
+	-webkit-border-radius: 5px 0px 5px 5px;
+	border-radius: 5px 0px 5px 5px;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes.LeftUp {
+	-moz-border-radius: 5px 5px 0px 5px;
+	-webkit-border-radius: 5px 5px 0px 5px;
+	border-radius: 5px 5px 0px 5px;
+}
+/*Right*/
+.ssMenuNodeChildren_rounded .ChildrenNodes.RightDown {
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes.RightUp {
+	-moz-border-radius: 5px 5px 5px 0px;
+	-webkit-border-radius: 5px 5px 5px 0px;
+	border-radius: 5px 5px 5px 0px;
+}
+
+/* ul layout styles */
+.ssMenuNodeChildren_rounded .ChildrenNodes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes  .Item.Expanded {
+	/*background-color: #222222;*/
+	color: #DDDDDD;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes  .Item.Hovered {
+	/*background-color: #222222;*/
+	color: #fff;
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.NoChildren {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes {
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.HasChildren.Hovered,
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.HasChildren.Expanded {
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+.ssMenuNodeChildren_rounded .ChildrenNodes  .Item div {
+	width: 100px;
+	max-width: 200px;
+	padding: 4px 10px;
+	margin-right: 10px;
+}
+
+/* Down */
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.DownRight.Expanded,
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.DownLeft.Expanded {
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+/* Up */
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.UpRight.Expanded,
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.UpLeft.Expanded {
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+/* Right */
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.RightDown.Expanded,
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.RightUp.Expanded {
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+}
+/* Left */
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.LeftDown.Expanded,
+.ssMenuNodeChildren_rounded .ChildrenNodes .Item.LeftUp.Expanded {
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+
+
+.ssMenuChildren_rounded .Item.Hovered.Level1,
+.ssMenuChildren_rounded .Item.Expanded.Level1,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level1 {
+	background-color: #222222;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level2,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level2,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level2 {
+	background-color: #636363;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level3,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level3,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level3 {
+	background-color: #222222;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level4,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level4,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level4 {
+	background-color: #636363;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level5,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level5,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level5 {
+	background-color: #222222;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level6,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level6,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level6 {
+	background-color: #636363;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level7,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level7,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level7 {
+	background-color: #222222;
+}
+.ssMenuNodeChildren_rounded .Item.Hovered.Level8,
+.ssMenuNodeChildren_rounded .Item.Expanded.Level8,
+.ssMenuNodeChildren_rounded .ChildrenNodes.Level8 {
+	background-color: #636363;
+}

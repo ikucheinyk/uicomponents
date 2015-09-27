@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script type="text/javascript" src="../../utils/ss.js"></script>
+	<script type="text/javascript" src="../../utils/json.js"></script>
+	<script type="text/javascript" src="../../transport/transport.js"></script>
+	<script type="text/javascript" src="../scrollbar.js"></script>
+	<link href="../themes/incentient.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<table cellpadding="0" cellspacing="0" style="margin: 100px 0px 0px 10px; height: 600px">
+		<tr>
+			<td id="scrollingContainer" style="width: 800px; height: 600px; overflow: hidden; background-color: #f1f1f1">
+				1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+				1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+				1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+			</td>
+			<td id="scrollbarContainer">
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+	var oScroll = new SS.scrollbar({
+		theme: 'incentient',
+		container: document.getElementById("scrollingContainer"),
+		scrollbarContainer: document.getElementById("scrollbarContainer"),
+		eventListeners: {
+		}
+	});
+	</script>
+</body>
+</html>

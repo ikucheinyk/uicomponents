@@ -1,0 +1,162 @@
+/***********************************************************
+ * ROOT LEVEL STYLES                                       * 
+ ***********************************************************/
+
+.rootNode_default {
+	font-family: tahoma;
+	font-size: 11px;
+}
+
+.rootNode_default table, .rootNode_default tbody, .rootNode_default tr, .rootNode_default td {
+	padding: 0px;
+	margin: 0px;
+	border: 0;
+}
+
+.rootNode_default .nodeLabel {
+	cursor: pointer;
+	padding: 0px 1px 0px 1px;
+}
+
+.rootNode_default .nodeLabelSelected {
+	background-color: #316AC5;
+	color: white;
+	padding: 0px 2px 0px 2px;
+	cursor: pointer;
+}
+
+.rootNode_default .firstChild .nodeSignCell {
+	background-image: url(default/branch-top.gif);
+	background-position: left center;	
+}
+.rootNode_default .middleChild .nodeSignCell {
+	background-image: url(default/branch-middle.gif);
+	background-position: left center;	
+}
+.rootNode_default .lastChild .nodeSignCell {
+	background-image: url(default/branch-bottom.gif);
+	background-position: left center;	
+}
+.rootNode_default .onlyChild .nodeSignCell {
+	background-image: url(default/branch-single.gif);
+	background-position: left center;	
+}
+
+
+.rootNode_default .Expanded .nodeSign {
+	width: 15px;
+	height: 15px;
+	background-image: url(default/minus.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.rootNode_default .Collapsed .nodeSign {
+	width: 15px;
+	height: 15px;
+	background-image: url(default/plus.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.rootNode_default .Loading .nodeSign {
+	width: 15px;
+	height: 15px;
+	background-image: url(default/loading.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.rootNode_default .Empty .nodeSign {
+	width: 15px;
+	height: 15px;
+	background: none;
+}
+
+/* children row */
+.rootNode_default .firstChildChildrenCellLine,
+.rootNode_default .middleChildChildrenCellLine {
+	background-image: url(default/branch-vertline.gif);
+	background-position: left center;
+}
+.rootNode_default .onlyChildChildrenCellLine,
+.rootNode_default .lastChildChildrenCellLine {
+	background: none;
+}
+
+/***********************************************************
+ * CHILD LEVEL STYLES                                       * 
+ ***********************************************************/
+
+.childNode_default {
+	font-family: tahoma;
+	font-size: 11px;
+}
+
+.childNode_default .nodeLabel {
+	cursor: pointer;
+	padding: 0px 1px 0px 1px;
+}
+
+.childNode_default .nodeLabelSelected {
+	background-color: #316AC5;
+	color: white;
+	padding: 0px 2px 0px 2px;
+	cursor: pointer;
+}
+
+
+
+
+.childNode_default .firstChild .nodeSignCell {
+	background-image: url(default/branch-middle.gif);
+	background-position: left center;
+}
+.childNode_default .middleChild .nodeSignCell {
+	background-image: url(default/branch-middle.gif);
+	background-position: left center;	
+}
+.childNode_default .lastChild .nodeSignCell {
+	background-image: url(default/branch-bottom.gif);
+	background-position: left center;	
+}
+.childNode_default .onlyChild .nodeSignCell {
+	background-image: url(default/branch-bottom.gif);
+	background-position: left center;	
+}
+
+
+.childNode_default .Expanded .nodeSign {
+	width: 15px;
+	height: 15px;
+	background-image: url(default/minus.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.childNode_default .Collapsed .nodeSign {
+	width: 15px;
+	height: 15px;
+	background-image: url(default/plus.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.childNode_default .Loading .nodeSign {
+	width: 15px;
+	height: 15px;
+	background-image: url(default/loading.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.childNode_default .Empty .nodeSign {
+	width: 15px;
+	height: 15px;
+	background: none;
+}
+
+/* children row */
+.childNode_default .firstChildChildrenCellLine,
+.childNode_default .middleChildChildrenCellLine {
+	background-image: url(default/branch-vertline.gif);
+	background-position: left center;
+}
+.childNode_default .onlyChildChildrenCellLine,
+.childNode_default .lastChildChildrenCellLine {
+	background: none;
+}

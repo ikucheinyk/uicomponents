@@ -1,0 +1,289 @@
+/*
+ * Root level
+ */
+.ssMenuChildren_tabsbrown {
+	font-family: "Myriad Pro",Arial;
+	color: #EADCCC;
+	font-weight: 400;
+	font-style:	normal;
+	width: 100%;
+	display:table;
+}
+/* ul layout styles */
+.ssMenuChildren_tabsbrown .ChildrenNodes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ssMenuChildren_tabsbrown .ChildrenNodes ul li {
+	height: 39px;
+	float: left;
+	cursor: pointer;
+	background: url("tabsbrown/header-menu-item.png") no-repeat scroll left top;
+	width: 111px;
+	font-size:	16px;
+	font-weight: lighter;
+	text-shadow: 0 1px 1px #252022
+}
+.ssMenuChildren_tabsbrown .ChildrenNodes ul .selected {
+	color: #EB7900;
+	background: url("tabsbrown/header-menu-item-selected.png") no-repeat scroll left top;
+}
+
+.ssMenuChildren_tabsbrown .ChildrenNodes  .Item div {
+	padding-top: 8px;
+	max-width: 200px;
+	text-align: center;
+}
+.ssMenuChildren_tabsbrown .ChildrenNodes  .Item.Expanded {
+	/*background-color: #513C2D;*/
+	color: #fff;
+}
+.ssMenuChildren_tabsbrown .ChildrenNodes  .Item.Expanded {
+	background: url("tabsbrown/header-menu-item-selected.png") no-repeat scroll left top;
+}
+.ssMenuChildren_tabsbrown .ChildrenNodes  .Item.Hovered {
+	color: #fff;
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.HasChildren.Hovered,
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.HasChildren.Expanded {
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+/* Down */
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.DownRight.Expanded,
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.DownLeft.Expanded {
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+/* Up */
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.UpRight.Expanded,
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.UpLeft.Expanded {
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+/* Right */
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.RightDown.Expanded,
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.RightUp.Expanded {
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+}
+/* Left */
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.LeftDown.Expanded,
+.ssMenuChildren_tabsbrown .ChildrenNodes .Item.LeftUp.Expanded {
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+/*
+ * Sub levels
+ */
+.ssMenuNodeChildren_tabsbrown {
+	font-family: tahoma;
+	font-size: 13px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ssMenuNodeChildren_tabsbrown.Frame1 {
+	filter:alpha(opacity=30);
+	-moz-opacity:0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3;
+
+}
+.ssMenuNodeChildren_tabsbrown.Frame2 {
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+
+}
+.ssMenuNodeChildren_tabsbrown.Frame3 {
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+
+}
+
+/* CHILDREN CONTAINER STYLES */
+/* Down */
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes {
+	/*background-color: #513C2D;*/
+	color: #DDDDDD;
+	padding: 5px;
+}
+
+/*Down*/
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.DownRight {
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.DownLeft {
+	-moz-border-radius: 5px 0px 5px 5px;
+	-webkit-border-radius: 5px 0px 5px 5px;
+	border-radius: 5px 0px 5px 5px;
+}
+/*Up*/
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.UpRight {
+	-moz-border-radius: 5px 5px 5px 0px;
+	-webkit-border-radius: 5px 5px 5px 0px;
+	border-radius: 5px 5px 5px 0px;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.UpLeft {
+	-moz-border-radius: 5px 5px 0px 5px;
+	-webkit-border-radius: 5px 5px 0px 5px;
+	border-radius: 5px 5px 0px 5px;
+}
+/*Left*/
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.LeftDown {
+	-moz-border-radius: 5px 0px 5px 5px;
+	-webkit-border-radius: 5px 0px 5px 5px;
+	border-radius: 5px 0px 5px 5px;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.LeftUp {
+	-moz-border-radius: 5px 5px 0px 5px;
+	-webkit-border-radius: 5px 5px 0px 5px;
+	border-radius: 5px 5px 0px 5px;
+}
+/*Right*/
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.RightDown {
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.RightUp {
+	-moz-border-radius: 5px 5px 5px 0px;
+	-webkit-border-radius: 5px 5px 5px 0px;
+	border-radius: 5px 5px 5px 0px;
+}
+
+/* ul layout styles */
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes  .Item.Expanded {
+	/*background-color: #513C2D;*/
+	color: #DDDDDD;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes  .Item.Hovered {
+	/*background-color: #513C2D;*/
+	color: #fff;
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.NoChildren {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes {
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.HasChildren.Hovered,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.HasChildren.Expanded {
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	text-shadow:0px 0px 1px #fcfcfc;
+}
+
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes  .Item div {
+	width: 100px;
+	max-width: 200px;
+	padding: 4px 10px;
+	margin-right: 10px;
+}
+
+/* Down */
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.DownRight.Expanded,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.DownLeft.Expanded {
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+/* Up */
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.UpRight.Expanded,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.UpLeft.Expanded {
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+/* Right */
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.RightDown.Expanded,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.RightUp.Expanded {
+	-moz-border-radius: 5px 0px 0px 5px;
+	-webkit-border-radius: 5px 0px 0px 5px;
+	border-radius: 5px 0px 0px 5px;
+}
+/* Left */
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.LeftDown.Expanded,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes .Item.LeftUp.Expanded {
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+
+/*Remove background color for hovered root LI*/
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level1 {
+	position: relative;
+	left: 1px;
+}
+
+.ssMenuChildren_tabsbrown .Item.Hovered.Level1,
+.ssMenuChildren_tabsbrown .Item.Expanded.Level1,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level1 {
+	background-color: transparent;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level2,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level2,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level2 {
+	background-color: #8B705E;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level3,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level3,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level3 {
+	background-color: #513C2D;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level4,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level4,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level4 {
+	background-color: #8B705E;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level5,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level5,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level5 {
+	background-color: #513C2D;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level6,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level6,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level6 {
+	background-color: #8B705E;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level7,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level7,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level7 {
+	background-color: #513C2D;
+}
+.ssMenuNodeChildren_tabsbrown .Item.Hovered.Level8,
+.ssMenuNodeChildren_tabsbrown .Item.Expanded.Level8,
+.ssMenuNodeChildren_tabsbrown .ChildrenNodes.Level8 {
+	background-color: #8B705E;
+}

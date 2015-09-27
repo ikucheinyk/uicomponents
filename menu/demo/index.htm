@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+ <head>
+	<title>Dropdown menu demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="../themes/default.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../themes/rounded.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../themes/tabsbrown.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../themes/blue.css" media="screen" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../../utils/ss.js"></script>
+	<script type="text/javascript" src="../menu.js"></script>
+</head>
+<body>
+<style>
+.test {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.test li {
+	background: green;
+	width: 100px;
+}
+</style>
+
+	<table cellpadding="5" cellspacing="1" border="0" style="background-color: #ccc">
+		<tr>
+			<td width="300">Single Node</td>
+			<td width="300">Menu</td>
+			<td width="300">Recursive nodes</td>
+		</tr>
+		<tr style="height: 200px">
+			<td valign="top" bgcolor="white"><div id="someelement" style="background: blue; color: white; width:100px">Simple tag</div></td>
+			<td valign="top" bgcolor="white"><div id="menuelement"></div></td>
+			<td valign="top" bgcolor="white"><div id="menuelement2"></div></td>			
+		</tr>
+		<tr>
+			<td width="300" colspan="3">Rounded corners theme</td>
+		</tr>
+		<tr style="height: 200px">
+			<td valign="top" bgcolor="white" colspan="3">
+<ul id="ul-list" style="display: none">
+  <li class="selected">Trance
+    <ul>
+      <li>Progressive
+        <ul>
+          <li><a href="#">Marcus Sultz</a></li>
+        </ul>
+      </li>
+      <li>Vocal
+        <ul>
+          <li><a href="#">Anna Lee</a></li>
+          <li><a href="#">Ferry Corsten</a></li>
+          <li><a href="#">Armin Van Buuren</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>House
+    <ul>
+      <li>Progressive house
+        <ul>
+          <li><a href="#">Tonica</a></li>
+          <li><a href="#">Sveta</a></li>
+          <li><a href="#">Jacob Henry</a></li>
+          <li><a href="#">Dave Cortex</a></li>
+        </ul>
+      </li>
+      <li>Vocal house
+        <ul>
+          <li><a href="#">Robbie Rivera</a></li>
+          <li><a href="#">David Guetta</a></li>
+        </ul>
+      </li>
+      <li>Tech house
+        <ul>
+          <li><a href="#">Carl Cox</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Jazz
+    <ul>
+      <li><a href="#">Louis Armstrong</a></li>
+      <li><a href="#">Cris Botti</a></li>
+      <li><a href="#">Diana Crall</a></li>
+    </ul>
+  </li>
+  <li>Rock
+    <ul>
+      <li><a href="#">Scorpions</a></li>
+      <li><a href="#">Metallica</a></li>
+    </ul>
+  </li>
+</ul>
+
+				<div id="ul-container"></div>
+			</td>
+		</tr>
+		<tr>
+			<td width="300" colspan="3">Tabs with dropdown submenus</td>
+		</tr>
+		<tr style="height: 200px">
+			<td valign="top" bgcolor="white" colspan="3">
+				<div id="ul-container-tabs"></div>
+			</td>
+		</tr>
+	</table>
+
+
+	<script>
+	var oNode = new SS.MenuNode({
+		triggerElement: $('someelement'),
+		expandDirection: 'DownRight',
+		children: [{
+			label: 'asdas',
+			url: '#',
+			children: [{
+				label: 'Menuitem 2',
+				url: '#'
+			},{
+				label: 'Menuitem 3',
+				url: '#'
+			},{
+				label: 'Menuitem 4',
+				url: '#'
+			}]
+		},{
+			label: 'Menuitem 1',
+			url: '#',
+			children: [{
+				label: 'Menuitem 2',
+				url: '#',
+				children: [{
+					label: 'Menuitem 2',
+					url: '#'
+				},{
+					label: 'Menuitem 3',
+					url: '#'
+				},{
+					label: 'Menuitem 4',
+					url: '#'
+				}]
+			},{
+				label: 'Menuitem 3',
+				url: '#'
+			},{
+				label: 'Menuitem 4',
+				url: '#'
+			}]
+		},{
+			label: 'No children'
+		}],
+		sourceType: 'json'
+	});
+	var oMenu = new SS.Menu({
+		container: $('menuelement'),
+		tableLayout: true,
+		children: [{
+			label: 'asdas',
+			url: '#',
+			expandDirection: 'DownRight',
+			children: [{
+				label: 'Menuitem 2',
+				url: '#'
+			},{
+				label: 'Menuitem 3',
+				url: '#'
+			},{
+				label: 'Menuitem 4',
+				url: '#'
+			}]
+		},{
+			label: 'Menuitem 1',
+			url: '#',
+			expandDirection: 'DownRight',
+			children: [{
+				label: 'Menuitem 2',
+				url: '#',
+				children: [{
+					label: 'Menuitem 2',
+					url: '#'
+				},{
+					label: 'Menuitem 3',
+					url: '#'
+				},{
+					label: 'Menuitem 4',
+					url: '#'
+				}]
+			},{
+				label: 'Menuitem 3',
+				url: '#'
+			},{
+				label: 'Menuitem 4',
+				url: '#'
+			}]
+		},{
+			label: 'No children'
+		}],
+		sourceType: 'json'
+	});
+	var oMenu = new SS.Menu({
+		container: $('menuelement2'),
+		theme: 'blue',
+		children: [{
+			label: 'asdas',
+			url: '#',
+			expandDirection: 'DownRight',
+			children: [{
+				label: 'Menuitem 2',
+				url: '#'
+			},{
+				label: 'Menuitem 3',
+				url: '#'
+			},{
+				label: 'Menuitem 4',
+				url: '#'
+			}]
+		},{
+			label: 'Menuitem 1',
+			url: '#',
+			expandDirection: 'DownRight',
+			children: [{
+				label: 'Menuitem 2',
+				url: '#',
+				children: [{
+					label: 'Menuitem 2',
+					url: '#'
+				},{
+					label: 'Menuitem 3',
+					url: '#'
+				},{
+					label: 'Menuitem 4',
+					url: '#'
+				}]
+			},{
+				label: 'Menuitem 3',
+				url: '#'
+			},{
+				label: 'Menuitem 4',
+				url: '#'
+			}]
+		},{
+			label: 'No children'
+		}],
+		sourceType: 'json'
+	});
+
+	new SS.Menu({
+		container: $('ul-container'),
+		theme: 'rounded',
+		source: $('ul-list'),
+		sourceType: 'html'
+	});
+	new SS.Menu({
+		container: $('ul-container-tabs'),
+		theme: 'tabsbrown',
+		source: $('ul-list'),
+		sourceType: 'html'
+	});
+
+
+	</script>
+</body>
+</html>

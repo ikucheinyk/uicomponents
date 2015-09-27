@@ -1,0 +1,337 @@
+<html>
+	<head>
+		<title>test</title>
+		<script type="text/javascript" src="../../utils/ss.js"></script>
+		<script type="text/javascript" src="../../utils/json.js"></script>
+		<script type="text/javascript" src="../../transport/transport.js"></script>
+		<script src="../tree.js"></script>
+		<link href="../themes/default.css" rel="stylesheet" type="text/css">
+		<style>
+			body {
+				font-family: tahoma;
+			}		
+		</style>
+		
+	</head>
+	<body>
+		
+	<table cellpadding="5" cellspacing="1" border="0" style="background-color: #ccc">
+		<tr>
+			<td width="300">Simple tree</td>
+			<td width="300">Preloading nodes</td>
+			<td width="300">Recursive nodes</td>
+		</tr>
+		<tr style="height: 200px">
+			<td valign="top" bgcolor="white"><div id="simple">Loading...</div></td>
+			<td valign="top" bgcolor="white"><div id="preloading_nodes">Loading...</div></td>
+			<td valign="top" bgcolor="white"><div id="recursive_nodes">Loading...</div></td>			
+		</tr>
+		<tr>
+			<td width="300">Expanded by default</td>
+			<td width="300">Slowly Preloaded Node</td>
+			<td width="300">Show icons</td>
+		</tr>
+		<tr style="height: 200px">
+			<td valign="top" bgcolor="white"><div id="expanded_by_default">Loading...</div></td>
+			<td valign="top" bgcolor="white"><div id="slow_response">Loading...</div></td>
+			<td valign="top" bgcolor="white">
+				<input type="button" value="Expand All" onclick="oExpandCollapseTree.expandAll()">
+				<input type="button" value="Collapse All" onclick="oExpandCollapseTree.collapseAll()">
+				<div id="expand_collapse">Loading...</div>
+			</td>			
+		</tr>
+		<tr>
+			<td width="300">Show Icons</td>
+			<td width="300">Selected nodes</td>
+			<td width="300">Events demo</td>
+		</tr>
+		<tr style="height: 200px">
+			<td valign="top" bgcolor="white"><div id="icons">Loading...</div></td>
+			<td valign="top" bgcolor="white"><div id="mark_selected">Loading...</div></td>
+			<td valign="top" bgcolor="white"><div id="events_demo">Loading...</div></td>			
+		</tr>
+	</table>		
+		
+		
+		<script language="JavaScript">
+			// simple tree
+			new SS.tree({
+				container: document.getElementById('simple'),
+				//sourceType: 'json',
+				source: [{
+					label: 'Music',
+					children: [{
+						label: 'Jazz',
+						children: [{
+							label: 'Louis Armstrong'
+						}]
+					},{
+						label: 'Rock',
+						children: [{
+							label: 'Bon Jovi'
+						},{
+							label: 'Metallica'
+						}]
+					},{
+						label: 'House',
+						children: [{
+							label: 'Deep Dish'
+						},{
+							label: 'Robbie Rivera'
+						}]
+					},{
+						label: 'Trance',
+						children: [{
+							label: 'Armin Van Buuren'
+						},{
+							label: 'Markus Shulz'
+						}]
+					}]					
+				},{
+					label: 'Moovies',
+					children: [{
+						label: 'Comedy',
+						children: [{
+							label: 'Home Alone'
+						},{
+							label: 'American Pie'
+						}]
+					},{
+						label: 'Action',
+						children: [{
+							label: 'Blade'
+						},{
+							label: 'Terminator'
+						}]
+					}]					
+				}]
+			});	
+		
+			// preloading nodes in a tree
+			new SS.tree({
+				container: document.getElementById('preloading_nodes'),
+				//sourceType: 'json',
+				source: [{
+					label: 'Simple Node',
+					children: [{
+						label: 'Simple Subnode'
+					}]					
+				},{
+					label: 'Preloading node',
+					sourceType: 'json/url',
+					source: 'preloading_branch.php'
+				}]
+			});	
+			
+			// tree with recursive nodes
+			new SS.tree({
+				container: document.getElementById('recursive_nodes'),
+				sourceType: 'json/url',
+				source: 'recursive_branch.php'
+			});			
+
+			// expanded by default
+			new SS.tree({
+				container: document.getElementById('expanded_by_default'),
+				source: [{
+					label: 'Not Expanded Node',
+					children: [{
+						label: 'Subnode 1'
+					},{
+						label: 'Subnode 2'
+					}]					
+				},{
+					label: 'Expanded Node By Default',
+					expanded: true,
+					children: [{
+						label: 'Subnode',
+						expanded: true,
+						children: [{
+							label: 'Last Node'
+						}]
+					}]					
+				}]
+			});	
+			
+			// slow response tree
+			new SS.tree({
+				container: document.getElementById('slow_response'),
+				source: [{
+					label: 'Not Expanded Node',
+					children: [{
+						label: 'Subnode 1'
+					},{
+						label: 'Subnode 2'
+					}]					
+				},{
+					label: 'Slowly Preloaded Node',
+					sourceType: 'json/url',
+					source: 'slow_response.php'
+				}]
+			});			
+			
+			
+			// expand & collapse
+			var oExpandCollapseTree = new SS.tree({
+				container: document.getElementById('expand_collapse'),
+				source: [{
+					label: 'Music',
+					children: [{
+						label: 'Jazz',
+						children: [{
+							label: 'Louis Armstrong'
+						}]
+					},{
+						label: 'Rock',
+						children: [{
+							label: 'Bon Jovi'
+						},{
+							label: 'Metallica'
+						}]
+					},{
+						label: 'House',
+						children: [{
+							label: 'Deep Dish'
+						},{
+							label: 'Robbie Rivera'
+						}]
+					},{
+						label: 'Trance',
+						children: [{
+							label: 'Armin Van Buuren'
+						},{
+							label: 'Markus Shulz'
+						}]
+					}]					
+				},{
+					label: 'Moovies',
+					children: [{
+						label: 'Comedy',
+						children: [{
+							label: 'Home Alone'
+						},{
+							label: 'American Pie'
+						}]
+					},{
+						label: 'Action',
+						children: [{
+							label: 'Blade'
+						},{
+							label: 'Terminator'
+						}]
+					}]					
+				}]
+			});				
+			
+
+
+			// simple tree
+			new SS.tree({
+				container: document.getElementById('icons'),
+				source: [{
+					label: 'Folder 1',
+					iconExpanded: 'icons/folderExpanded.gif',
+					iconCollapsed: 'icons/folderCollapsed.gif',
+					expanded: true,
+					children: [{
+						label: 'Help File',
+						iconCollapsed: 'icons/hlp.gif'
+					},{
+						label: 'html file',
+						iconCollapsed: 'icons/htm.gif'
+					}]					
+				},{
+					label: 'Folder 2',
+					iconExpanded: 'icons/folderExpanded.gif',
+					iconCollapsed: 'icons/folderCollapsed.gif',
+					expanded: true,
+					children: [{
+						label: 'Image',
+						iconCollapsed: 'icons/img.gif'
+					},{
+						label: 'Text file',
+						iconCollapsed: 'icons/txt.gif'
+					}]					
+				}]
+			});	
+			
+			// simple tree
+			new SS.tree({
+				container: document.getElementById('mark_selected'),
+				expandCollapseOnLabelClick: true,
+				selectOnLabelClick: true,
+				source: [{
+					label: 'Folder 1',
+					iconExpanded: 'icons/folderExpanded.gif',
+					iconCollapsed: 'icons/folderCollapsed.gif',
+					expanded: true,
+					children: [{
+						label: 'Help File',
+						iconCollapsed: 'icons/hlp.gif'
+					},{
+						label: 'html file',
+						iconCollapsed: 'icons/htm.gif'
+					}]					
+				},{
+					label: 'Folder 2',
+					iconExpanded: 'icons/folderExpanded.gif',
+					iconCollapsed: 'icons/folderCollapsed.gif',
+					expanded: true,
+					children: [{
+						label: 'Image',
+						iconCollapsed: 'icons/img.gif'
+					},{
+						label: 'Text file',
+						iconCollapsed: 'icons/txt.gif'
+					}]					
+				}]
+			});				
+
+
+			// events_demo
+			new SS.tree({
+				container: document.getElementById('events_demo'),
+				expandCollapseOnLabelClick: true,
+				selectOnLabelClick: true,
+				source: [{
+					label: 'Folder 1',
+					iconExpanded: 'icons/folderExpanded.gif',
+					iconCollapsed: 'icons/folderCollapsed.gif',
+					children: [{
+						label: 'Help File',
+						iconCollapsed: 'icons/hlp.gif'
+					},{
+						label: 'html file',
+						iconCollapsed: 'icons/htm.gif'
+					}]					
+				},{
+					label: 'Folder 2',
+					iconExpanded: 'icons/folderExpanded.gif',
+					iconCollapsed: 'icons/folderCollapsed.gif',
+					children: [{
+						label: 'Image',
+						iconCollapsed: 'icons/img.gif'
+					},{
+						label: 'Text file',
+						iconCollapsed: 'icons/txt.gif'
+					}]					
+				}],
+				eventListeners: {
+					iconClick: function(oNode) {
+						alert('Node `' + oNode.label + '` icon clicked');
+					},
+					signClick: function(oNode) {
+						alert('Node `' + oNode.label + '` sign clicked');
+					},
+					labelClick: function(oNode) {
+						alert('Node `' + oNode.label + '` label clicked');
+					},
+					select: function(oNode) {
+						alert('Node `' + oNode.label + '` marked selected');
+					}
+				}
+			});	
+
+		</script>
+	</body>
+</html>

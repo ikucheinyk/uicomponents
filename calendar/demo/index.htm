@@ -1,0 +1,60 @@
+<html>
+<head>
+	<script type="text/javascript" src="../../utils/ss.js"></script>
+	<script type="text/javascript" src="../../utils/json.js"></script>
+	<script type="text/javascript" src="../../transport/transport.js"></script>
+	<script type="text/javascript" src="../calendar.js"></script>
+	<script type="text/javascript" src="../datepicker.js"></script>
+	<link href="../themes/default.css" rel="stylesheet" type="text/css">
+	<link href="../themes/incentient.css" rel="stylesheet" type="text/css">
+	<link href="../themes/puzzle.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div id="calContainer"></div>
+	<br>
+	<div id="calContainer2"></div>
+	<br>
+	<div id="calContainer3"></div>
+	<input type="text" id="datePicker">
+	<script type="text/javascript">
+	var oCal = new SS.calendar({
+		theme: 'incentient',
+		container: document.getElementById("calContainer"),
+		weekStart: 'sun',
+		/*todayDate: '2009-06-29',*/
+		eventListeners: {
+			dayClick: function(oEvent, dDay) {
+				alert(dDay);
+			}
+		}
+	});
+	var oCal2 = new SS.calendar({
+		theme: 'default',
+		container: document.getElementById("calContainer2"),
+		weekStart: 'sun',
+		/*todayDate: '2009-06-29',*/
+		eventListeners: {
+			dayClick: function(oEvent, dDay) {
+				alert(dDay);
+			}
+		}
+	});
+	var oCal3 = new SS.calendar({
+		theme: 'puzzle',
+		container: document.getElementById("calContainer3"),
+		weekStart: 'sun',
+		/*todayDate: '2009-06-29',*/
+		eventListeners: {
+
+		}
+	});
+
+	new SS.DatePicker({
+		theme: 'default',
+		element: document.getElementById("datePicker"),
+		weekStart: 'sun'
+	});
+	</script>
+</body>
+</html>
